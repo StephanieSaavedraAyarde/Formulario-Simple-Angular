@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguro Medico UCB</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  </head>
+  <body>
+    <div>
+      <a href="inicio.html" class="btn-cancelar" title="Cancelar Registro">X</a>
+    </div>
+    <div class="container">
+      <header>Formulario para deteccion de COVID-19</header>
+      <div class="progress-bar">
+        <div class="paso">
+          <p>Datos Estudiante</p>
+          <div class="num">
+            <span>1</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="paso">
+          <p>Analisis Medico</p>
+          <div class="num">
+            <span>2</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="paso">
+          <p>Enfermedades</p>
+          <div class="num">
+            <span>3</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="paso">
+          <p>Contacto</p>
+          <div class="num">
+            <span>4</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+      </div>
+      <div class="form-princ">      
+        <form action="#" id="formulario">
+
+          <div class="pagina movPag">
+            <div class="titulo">Informacion del Estudiante</div>
+            <div class="campo">
+              <div class="label">Nombre(s): <b class="error" id="nombres-error"></b> </div>
+              <input type="text" id="nombres" placeholder="Nombres">
+            </div>
+            <div class="campo">
+              <div class="label">Apellido Materno: <b class="error" id="apellido1-error"></b> </div>
+              <input type="text" id="apellido1" placeholder="Apellido Paterno">
+            </div>
+            <div class="campo">
+              <div class="label">Apellido Paterno: <b class="error" id="apellido2-error"></b> </div>
+              <input type="text" id="apellido2" placeholder="Apellido Materno">
+            </div>
+            <div class="campo">
+              <div class="label">Numero de CI: <b class="error" id="ci-error"></b> </div>
+              <input type="text" id="ci" placeholder="Numero de Cedula de Identidad">
+            </div>
+            <div class="campo sigPag" style="margin-bottom: 12px;">
+              <button>Siguiente</button>
+            </div>
+          </div>
+
+          <div class="pagina">
+            <div class="titulo">Analisis Medico</div>
+            <div class="campo">
+              <div class="label">Sintomas: <b class="error" id="sintomas-error"></b> </div>
+              <select multiple id="sintomas" placeholder="Sintomas Registrados">
+                  <option>Fiebre</option>
+                  <option>Tos</option>
+                  <option>Dolor de Garganta</option>
+              </select>
+            </div>
+            <div class="campo">
+              <div class="label">Peso: <b class="error" id="peso-error"></b> </div>
+              <input type="text" id="peso" placeholder="Peso Actual (Kg)">
+            </div>
+            <div class="campo">
+              <div class="label">Altura: <b class="error" id="altura-error"></b> </div>
+              <input type="text" id="altura" placeholder="Altura Actual (cm)">
+            </div>
+            <div class="campo">
+              <div class="label">Fecha de Nacimiento: <b class="error" id="masaCorporal-error"></b> </div>
+              <input type="date" id="masaCorporal" placeholder="Masa Corporal" >
+            </div>
+            
+            <div class="campo btns">
+              <button class="volver-pag1 volver">Atrás</button>
+              <button class="adelante-pag3 adelante">Siguiente</button>
+            </div>
+          </div>
+
+          <div class="pagina">
+            <div class="titulo">Enfermedades Base</div>
+            <div class="campo">
+              <div class="label">Enfermedades Bases registradas: <b class="error" id="enfermedades-error"></b> </div>
+              <select multiple id="enfermedades" placeholder="Enfermedades Base registradas">
+                <option>Hipertension</option>
+                <option>Cancer</option>
+                <option>Diabetes</option>
+                <option>VIH Sida</option>
+                <option>Asma</option>
+            </select>
+            </div>
+            <div class="campo">
+              <div class="label">Alergias Registradas: <b class="error" id="alergias-error"></b> </div>
+              <input type="text" id="alergias" placeholder="Alergias Registradas">
+            </div>
+            <div class="campo btns">
+              <button class="volver-pag2 volver">Atrás</button>
+              <button class="adelante-pag4 adelante">Siguiente</button>
+            </div>
+          </div>
+           
+          <div class="pagina">
+            <div class="titulo">Información de Contacto</div>
+            <div class="campo">
+              <div class="label">Correo Electrónico: <b class="error" id="correo-error"></b> </div>
+              <input type="text" id="correo" placeholder="Correo Electrónico">
+            </div>
+            <div class="campo">
+              <div class="label">Numero Telefonico: <b class="error" id="telefono-error"></b> </div>
+              <input type="text" id="telefono" placeholder="Numero Telefonico">
+            </div>
+            <div class="campo">
+              <div class="label">Nombre Contacto de Emergencia: <b class="error" id="contacto-error"></b> </div>
+              <input type="text" id="contacto" placeholder="Contacto de Emergencia">
+            </div>
+            <div class="campo">
+              <div class="label">Numero Contacto de Emergencia: <b class="error" id="numeroContacto-error"></b> </div>
+              <input type="text" id="numeroContacto" placeholder="Numero Contacto de Emergencia">
+            </div>
+            <div class="campo btns">
+              <button class="volver-pag3 volver">Atrás</button>
+              <button class="Fin">Enviar</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function mostrarContra(){
+          var x = document.getElementById("contra");
+          var y = document.getElementById("ocultar");
+          var z = document.getElementById("mostrar");
+
+          if (x.type=='password') {
+                x.type = "text";
+                y.style.display="block";
+                z.style.display="none";
+          }else{
+                x.type = "password";
+                y.style.display="none";
+                z.style.display="block";
+          }
+      }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="movimiento.js"></script>
+
+</body>
+</html>
